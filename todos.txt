@@ -1,9 +1,6 @@
 study python
-eat eggs
+eat egg
 Do laundry
-learn
-eat bread
+learn pythoneat bread
 sleep
-eidts
-good
-ab
+run
