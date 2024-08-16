@@ -1,6 +1,12 @@
 import FreeSimpleGUI as sg
 import functions
 import time
+import os
+
+if not os.path.exists("todos,txt"):
+    with open("todos.txt", 'w') as file:
+        pass
+
 
 sg.theme("LightBlue1")
 
@@ -56,19 +62,14 @@ while True:
                 window['todo'].update("")
             except IndexError:
                 sg.popup("Select a Todo first.")
+
         case "Exit":
             break
+
         case "todo1":
             window['todo'].update(value=value['todo1'][0])
 
-
-
         case sg.WIN_CLOSED:
             break
-
-
-
-
-
 
 window.close()
